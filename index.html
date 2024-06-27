@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy & Sons</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark-subtle">
+      <div class="container-fluid">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="100" height="75" viewBox="0 0 2000 1500"><rect width="2000" height="1500" fill="#ffffff"></rect><g transform="matrix(0.75,0,0,0.75,249.090909090909,399.6415607951276)"><svg viewBox="0 0 396 185" data-background-color="#ffffff" preserveAspectRatio="xMidYMid meet" height="934" width="2000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="tight-bounds" transform="matrix(1,0,0,1,0.2400000000000091,0.02863847666152708)"><svg viewBox="0 0 395.52 184.94272304667695" height="184.94272304667695" width="395.52"><g><svg viewBox="0 0 395.52 184.94272304667695" height="184.94272304667695" width="395.52"><g transform="matrix(1,0,0,1,0,114.3020223769191)"><svg viewBox="0 0 395.52 70.64070066975785" height="70.64070066975785" width="395.52"><g id="textblocktransform"><svg viewBox="0 0 395.52 70.64070066975785" height="70.64070066975785" width="395.52" id="textblock"><g><svg viewBox="0 0 395.52 70.64070066975785" height="70.64070066975785" width="395.52"><g transform="matrix(1,0,0,1,0,0)"><svg width="395.52" viewBox="2.25 -39 291.13 52" height="70.64070066975785" data-palette-color="#1f55b3"><path d="M32.9-28.85L32.9-28.85Q32.9-24.85 30.5-22.2 28.1-19.55 22.85-18.65L22.85-18.65 33.9-5.35Q35.25-3.7 36.88-2.98 38.5-2.25 40.75-1.9L40.75-1.9 40.75 0 31.1 0 18.85-15.7Q18.2-16.55 17.63-17.05 17.05-17.55 16.43-17.82 15.8-18.1 14.98-18.18 14.15-18.25 13-18.25L13-18.25 13-7.85Q13-6 13.23-4.83 13.45-3.65 14.18-3 14.9-2.35 16.28-2.13 17.65-1.9 19.9-1.9L19.9-1.9 19.9 0 2.25 0 2.25-1.9Q4-1.95 5.08-2.2 6.15-2.45 6.75-3.05 7.35-3.65 7.55-4.75 7.75-5.85 7.75-7.6L7.75-7.6 7.75-30.9Q7.75-32.65 7.58-33.73 7.4-34.8 6.88-35.43 6.35-36.05 5.35-36.27 4.35-36.5 2.75-36.6L2.75-36.6 2.75-38.5 18.45-38.5Q25.35-38.5 29.13-35.95 32.9-33.4 32.9-28.85ZM13-35.3L13-20.75 16.55-20.75Q21.55-20.75 23.98-22.58 26.4-24.4 26.4-28.6L26.4-28.6Q26.4-32.65 24.48-34.4 22.55-36.15 18.45-36.15L18.45-36.15 13.85-36.15Q13-36.15 13-35.3L13-35.3ZM55.15-27L55.15-27Q58-27 60.55-25.98 63.1-24.95 65.02-23.15 66.95-21.35 68.07-18.88 69.2-16.4 69.2-13.45L69.2-13.45Q69.2-10.4 68.07-7.85 66.95-5.3 65.02-3.45 63.1-1.6 60.55-0.55 58 0.5 55.15 0.5L55.15 0.5Q52.35 0.5 49.82-0.53 47.3-1.55 45.4-3.4 43.5-5.25 42.4-7.83 41.3-10.4 41.3-13.45L41.3-13.45Q41.3-16.4 42.4-18.9 43.5-21.4 45.4-23.2 47.3-25 49.82-26 52.35-27 55.15-27ZM55.15-24.6L55.15-24.6Q53.3-24.6 51.77-23.8 50.25-23 49.17-21.53 48.1-20.05 47.52-17.98 46.95-15.9 46.95-13.4L46.95-13.4Q46.95-10.8 47.52-8.7 48.1-6.6 49.17-5.13 50.25-3.65 51.75-2.85 53.25-2.05 55.15-2.05L55.15-2.05Q57.05-2.05 58.6-2.85 60.15-3.65 61.25-5.15 62.35-6.65 62.95-8.75 63.55-10.85 63.55-13.4L63.55-13.4Q63.55-15.9 62.95-17.95 62.35-20 61.25-21.48 60.15-22.95 58.6-23.78 57.05-24.6 55.15-24.6ZM95.55-16.4L84.65 7.85Q82.35 13 77.5 13L77.5 13Q74.35 13 74.35 10.65L74.35 10.65Q74.35 9.4 75.22 8.83 76.1 8.25 78.45 7.85L78.45 7.85Q79.5 7.7 80.25 7.43 81 7.15 81.6 6.73 82.2 6.3 82.67 5.65 83.15 5 83.6 4.05L83.6 4.05 85.35 0.55 75.75-20.3Q75.1-21.7 74.62-22.53 74.15-23.35 73.62-23.83 73.1-24.3 72.45-24.48 71.8-24.65 70.8-24.75L70.8-24.75 70.8-26.5 84.05-26.5 84.05-24.75Q80.7-24.75 80.7-23.1L80.7-23.1Q80.7-22.45 81.1-21.05 81.5-19.65 82.1-18.2L82.1-18.2 87.6-4.9 87.85-4.9 92.4-16.15Q93.05-17.8 93.47-18.85 93.9-19.9 94.12-20.58 94.35-21.25 94.42-21.7 94.5-22.15 94.5-22.55L94.5-22.55Q94.5-23.85 93.77-24.3 93.05-24.75 91-24.75L91-24.75 91-26.5 102-26.5 102-24.75Q101.05-24.75 100.4-24.5 99.75-24.25 99.07-23.38 98.4-22.5 97.57-20.85 96.75-19.2 95.55-16.4L95.55-16.4ZM132.74-22.9L132.74-22.9Q135.14-24.75 136.24-26.68 137.34-28.6 137.34-30.85L137.34-30.85Q137.34-33.2 136.29-34.58 135.24-35.95 133.49-35.95L133.49-35.95Q130.19-35.95 130.19-30.9L130.19-30.9Q130.19-28.7 130.84-26.68 131.49-24.65 132.74-22.9ZM138.64-6.65L129.89-18.2Q126.74-16.4 124.99-13.98 123.24-11.55 123.24-8.95L123.24-8.95Q123.24-6.2 125.02-4.42 126.79-2.65 129.59-2.65L129.59-2.65Q131.69-2.65 134.09-3.7 136.49-4.75 138.64-6.65L138.64-6.65ZM134.14-21L142.24-10.45Q143.44-11.95 144.47-13.38 145.49-14.8 146.24-16.07 146.99-17.35 147.39-18.4 147.79-19.45 147.79-20.1L147.79-20.1Q147.79-20.9 147.07-21.25 146.34-21.6 144.74-21.6L144.74-21.6 144.74-23.35 156.24-23.35 156.24-21.6Q155.14-21.6 154.37-21.48 153.59-21.35 152.99-21.05 152.39-20.75 151.87-20.25 151.34-19.75 150.84-18.95L150.84-18.95 143.74-8.55Q145.84-5.7 148.12-4.23 150.39-2.75 152.64-2.75L152.64-2.75Q153.29-2.75 153.79-2.88 154.29-3 154.72-3.33 155.14-3.65 155.52-4.2 155.89-4.75 156.29-5.6L156.29-5.6 157.54-5.25Q156.99-2.45 155.09-0.98 153.19 0.5 150.14 0.5L150.14 0.5Q148.89 0.5 147.77 0.23 146.64-0.05 145.49-0.7 144.34-1.35 143.04-2.4 141.74-3.45 140.19-5L140.19-5Q137.69-2.4 134.42-0.95 131.14 0.5 127.74 0.5L127.74 0.5Q125.44 0.5 123.52-0.18 121.59-0.85 120.19-2.02 118.79-3.2 117.99-4.83 117.19-6.45 117.19-8.35L117.19-8.35Q117.19-11.75 119.89-14.63 122.59-17.5 128.54-20.4L128.54-20.4Q126.94-22.75 126.22-24.8 125.49-26.85 125.49-29.1L125.49-29.1Q125.49-31.3 126.12-33.13 126.74-34.95 127.89-36.25 129.04-37.55 130.64-38.27 132.24-39 134.19-39L134.19-39Q135.89-39 137.32-38.45 138.74-37.9 139.79-36.9 140.84-35.9 141.42-34.55 141.99-33.2 141.99-31.55L141.99-31.55Q141.99-28.75 140.17-26.3 138.34-23.85 134.14-21L134.14-21ZM177.29-0.55L176.54-11.75 178.39-11.75Q178.74-9.5 179.71-7.7 180.69-5.9 182.16-4.65 183.64-3.4 185.56-2.73 187.49-2.05 189.74-2.05L189.74-2.05Q193.44-2.05 195.59-3.8 197.74-5.55 197.74-8.55L197.74-8.55Q197.74-9.8 197.31-10.85 196.89-11.9 195.89-12.88 194.89-13.85 193.21-14.8 191.54-15.75 188.99-16.85L188.99-16.85Q185.89-18.2 183.79-19.45 181.69-20.7 180.44-22.05 179.19-23.4 178.66-24.93 178.14-26.45 178.14-28.4L178.14-28.4Q178.14-30.7 178.96-32.65 179.79-34.6 181.29-36.02 182.79-37.45 184.84-38.23 186.89-39 189.34-39L189.34-39Q191.54-39 193.44-38.3 195.34-37.6 197.29-36.05L197.29-36.05 198.59-38.3 199.74-38.3 200.29-28.35 198.44-28.35Q197.24-32.45 194.96-34.45 192.69-36.45 189.49-36.45L189.49-36.45Q186.44-36.45 184.64-34.95 182.84-33.45 182.84-30.9L182.84-30.9Q182.84-29.7 183.24-28.73 183.64-27.75 184.54-26.88 185.44-26 186.89-25.13 188.34-24.25 190.49-23.3L190.49-23.3Q194.19-21.65 196.64-20.23 199.09-18.8 200.54-17.38 201.99-15.95 202.59-14.38 203.19-12.8 203.19-10.85L203.19-10.85Q203.19-8.35 202.19-6.25 201.19-4.15 199.39-2.65 197.59-1.15 195.09-0.33 192.59 0.5 189.59 0.5L189.59 0.5Q186.74 0.5 184.46-0.3 182.19-1.1 179.84-3L179.84-3 178.44-0.55 177.29-0.55ZM222.13-27L222.13-27Q224.98-27 227.53-25.98 230.08-24.95 232.01-23.15 233.93-21.35 235.06-18.88 236.18-16.4 236.18-13.45L236.18-13.45Q236.18-10.4 235.06-7.85 233.93-5.3 232.01-3.45 230.08-1.6 227.53-0.55 224.98 0.5 222.13 0.5L222.13 0.5Q219.33 0.5 216.81-0.53 214.28-1.55 212.38-3.4 210.48-5.25 209.38-7.83 208.28-10.4 208.28-13.45L208.28-13.45Q208.28-16.4 209.38-18.9 210.48-21.4 212.38-23.2 214.28-25 216.81-26 219.33-27 222.13-27ZM222.13-24.6L222.13-24.6Q220.28-24.6 218.76-23.8 217.23-23 216.16-21.53 215.08-20.05 214.51-17.98 213.93-15.9 213.93-13.4L213.93-13.4Q213.93-10.8 214.51-8.7 215.08-6.6 216.16-5.13 217.23-3.65 218.73-2.85 220.23-2.05 222.13-2.05L222.13-2.05Q224.03-2.05 225.58-2.85 227.13-3.65 228.23-5.15 229.33-6.65 229.93-8.75 230.53-10.85 230.53-13.4L230.53-13.4Q230.53-15.9 229.93-17.95 229.33-20 228.23-21.48 227.13-22.95 225.58-23.78 224.03-24.6 222.13-24.6ZM249.38-14.55L249.38-7.85Q249.38-5.8 249.48-4.63 249.58-3.45 250.01-2.83 250.43-2.2 251.26-2 252.08-1.8 253.53-1.7L253.53-1.7 253.53 0 240.43 0 240.43-1.7Q241.83-1.8 242.66-2 243.48-2.2 243.93-2.8 244.38-3.4 244.51-4.5 244.63-5.6 244.63-7.5L244.63-7.5 244.63-14.15Q244.63-20.1 244.33-21.4L244.33-21.4Q244.18-22.05 243.96-22.48 243.73-22.9 243.28-23.13 242.83-23.35 242.13-23.43 241.43-23.5 240.33-23.5L240.33-23.5 240.33-25.1 248.33-27 248.93-22.05 249.13-22.05Q251.03-24.4 253.58-25.7 256.13-27 259.13-27L259.13-27Q261.43-27 263.33-26.25 265.23-25.5 266.23-24.2L266.23-24.2Q267.08-23.05 267.43-21.23 267.78-19.4 267.78-16.2L267.78-16.2 267.78-7.85Q267.78-5.8 267.91-4.63 268.03-3.45 268.43-2.83 268.83-2.2 269.66-2 270.48-1.8 271.83-1.7L271.83-1.7 271.83 0 258.88 0 258.88-1.7Q260.28-1.75 261.11-1.98 261.93-2.2 262.36-2.8 262.78-3.4 262.91-4.53 263.03-5.65 263.03-7.5L263.03-7.5 263.03-14.1Q263.03-16.95 262.73-18.9 262.43-20.85 261.76-22.05 261.08-23.25 259.98-23.78 258.88-24.3 257.33-24.3L257.33-24.3Q255.08-24.3 253.21-23.13 251.33-21.95 250.28-19.9L250.28-19.9Q250.03-19.4 249.86-18.95 249.68-18.5 249.58-17.9 249.48-17.3 249.43-16.53 249.38-15.75 249.38-14.55L249.38-14.55ZM278.33-1.75L277.33 0 276.23 0 276.23-8.6 277.48-8.6Q279.43-1.55 284.58-1.55L284.58-1.55Q286.58-1.55 287.75-2.53 288.93-3.5 288.93-5.5L288.93-5.5Q288.93-6.25 288.7-6.78 288.48-7.3 287.85-7.88 287.23-8.45 286.1-9.2 284.98-9.95 283.13-11.1L283.13-11.1Q281.43-12.15 280.18-13.05 278.93-13.95 278.08-14.88 277.23-15.8 276.8-16.85 276.38-17.9 276.38-19.3L276.38-19.3Q276.38-21 276.95-22.43 277.53-23.85 278.53-24.85 279.53-25.85 280.88-26.43 282.23-27 283.83-27L283.83-27Q285.18-27 286.63-26.58 288.08-26.15 289.18-25.45L289.18-25.45 290.18-26.5 291.13-26.5 291.13-19.3 289.83-19.3Q288.73-22.35 287.43-23.65 286.13-24.95 284.23-24.95L284.23-24.95Q282.53-24.95 281.5-24.05 280.48-23.15 280.48-21.55L280.48-21.55Q280.48-20.7 280.75-20.08 281.03-19.45 281.63-18.85 282.23-18.25 283.15-17.63 284.08-17 285.38-16.2L285.38-16.2Q287.53-14.85 289.05-13.8 290.58-12.75 291.53-11.73 292.48-10.7 292.93-9.6 293.38-8.5 293.38-7.1L293.38-7.1Q293.38-3.55 291.08-1.53 288.78 0.5 285.03 0.5L285.03 0.5Q281.13 0.5 278.33-1.75L278.33-1.75Z" opacity="1" transform="matrix(1,0,0,1,0,0)" fill="#1f55b3" class="wordmark-text-0" data-fill-palette-color="primary" id="text-0"></path></svg></g></svg></g></svg></g></svg></g><g transform="matrix(1,0,0,1,148.9472758371973,0)"><svg viewBox="0 0 97.62544832560533 97.62544832560535" height="97.62544832560535" width="97.62544832560533"><g><svg></svg></g><g id="icon-0"><svg viewBox="0 0 97.62544832560533 97.62544832560535" height="97.62544832560535" width="97.62544832560533"><g><path transform="scale(0.97625,0.97625)" d="M30 100c-16.569 0-30-13.431-30-30v-40c0-16.569 13.431-30 30-30h40c16.569 0 30 13.431 30 30v40c0 16.569-13.431 30-30 30z" fill="#ff585f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal" data-fill-palette-color="accent"></path></g><g transform="matrix(1,0,0,1,19.525089665121065,25.257639689964545)"><svg viewBox="0 0 58.5752689953632 47.11016894567626" height="47.11016894567626" width="58.5752689953632"><g><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 9.786 100.00034525290005 80.42699999999999" enable-background="new 0 0 100 100" xml:space="preserve" id="dxe-0" width="58.5752689953632" height="47.11016894567626" class="icon-dxe-0" data-fill-palette-color="quaternary"><path d="M49.942 52.994L90.595 51.529C88.068 47.352 87.436 43.698 82.606 43.068 75.377 42.128 68.148 41.185 60.918 40.242L18.843 34.762C20.101 36.792 39.724 53.361 49.942 52.994" fill="#ffffff" data-fill-palette-color="quaternary"></path><path d="M0 9.786C4.391 17.043 26.615 32.858 32.953 33.672 50.283 35.903 67.61 38.132 84.939 40.36 81.546 34.753 80.759 31.01 74.627 29.401L47.91 22.378C31.94 18.182 15.97 13.984 0 9.786" fill="#ffffff" data-fill-palette-color="quaternary"></path><path d="M63.108 66.207L94.349 59.547C92.321 56.201 92.315 54.188 88.522 54.358 82.364 54.631 76.208 54.907 70.051 55.18 58.708 55.686 47.365 56.194 36.023 56.698 37.298 58.064 54.94 67.947 63.108 66.207" fill="#ffffff" data-fill-palette-color="quaternary"></path><path d="M87.682 90.213C93.407 86.494 94.944 82.492 98.201 76.406 101.852 69.582 99.458 68.562 95.38 61.81 94.963 61.122 89.538 62.042 88.927 62.714 88.182 63.532 88.679 68.169 88.633 69.21z" fill="#ffffff" data-fill-palette-color="quaternary"></path><path d="M86.35 63.447C82.555 64.256 77.746 63.638 76.778 67.676L72.658 84.887C81.904 82.678 86.028 71.582 86.35 63.447" fill="#ffffff" data-fill-palette-color="quaternary"></path><path d="M74.666 66.121C65.518 68.074 65.71 70.732 61.787 79.301 68.007 78.711 73.811 71.941 74.666 66.121" fill="#ffffff" data-fill-palette-color="quaternary"></path></svg></g></svg></g></svg></g></svg></g><g></g></svg></g><defs></defs></svg><rect width="395.52" height="184.94272304667695" fill="none" stroke="none" visibility="hidden"></rect></g></svg></g></svg>
+        <a class="navbar-brand fs-3 text px-1 px-lg-3" href="#">Roy & Sons</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-4 mb-lg-0 fs-5 text">
+            <li class="nav-item px-1 px-lg-4">
+              <a class="nav-link active" aria-current="page" href="#hero-two">Home</a>
+            </li>
+            <li class="nav-item dropdown px-0 px-lg-1">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Consulting</a></li>
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#services">More</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-0 px-lg-1">
+              <a class="nav-link" href="#testimonials">Testimonial</a>
+            </li>
+            <li class="nav-item px-0 px-lg-1">
+              <a class="nav-link" href="#contact-us">Contact</a>
+            </li>
+            <li class="nav-item px-0 px-lg-1">
+              <a class="nav-link" href="#pricing" aria-disabled="true">Pricing</a>
+            </li>
+          </ul>
+          <form class="d-flex px-2" role="search">
+            <input
+              class="form-control me-2 px-0 px-lg-3"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success fs-6" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="27"
+                height="27"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                ></path>
+              </svg>
+            </button>
+          </form>
+          <button
+            class="btn btn-outline-success px-3 mx-1 fs-6 fw-medium"
+            type="submit"
+          >
+            Log in
+          </button>
+          <button class="btn btn-danger px-3 mx-1 fs-6" type="submit">
+            Sign in
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO 1 -->
+
+    <div class="hero">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img
+              src="https://picsum.photos/id/9/720/240"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="fw-bold">On time Services</h2>
+              <p>
+                Always avaliable for service 24/7.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/id/7/720/240"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="fw-bold">On point service</h2>
+              <p>
+                Experienced experts and staffs for quality service.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/id/26/720/240"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="fw-bold">On air modification</h2>
+              <p>
+                Modification and Update on time.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- HERO 2 -->
+
+    <div id="hero-two ">
+      <div class="px-4 py-3 my-5 text-center">
+        <img
+          class="d-block mx-auto mb-4 img-fluid"
+          src="/roy--sons-high-resolution-logo.png"
+          alt=""
+          width="400"
+          height="300"
+        />
+        <h1 class="display-5 fw-bold text-body-emphasis">
+          Roy & Sons Counsulting
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            At Roy & Sons, we empower businesses to achieve their fullest potential. Our team of expert consultants combines industry-leading knowledge with innovative strategies to deliver tailored solutions that drive success. Partner with us to navigate challenges, seize opportunities, and unlock unprecedented growth. Your success is our mission..
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" href="#pricing" class="btn btn-success btn-lg px-4 gap-3">
+              See Pricing
+            </button>
+            <button type="button" href="#services" class="btn btn-outline-danger btn-lg px-4">
+              Services
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROGRESS BAR -->
+
+    <div class="progress-main px-5 py-3">
+      <div class="progress-stacked" style="height: 32px">
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Segment one "
+          aria-valuenow="15"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 15%; height: 32px"
+        >
+          <div class="progress-bar fs-6">Counsulting</div>
+        </div>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Segment two"
+          aria-valuenow="30"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 30%; height: 32px"
+        >
+          <div class="progress-bar bg-success fs-6">Marketing</div>
+        </div>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Segment three"
+          aria-valuenow="20"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 20%; height: 32px"
+        >
+          <div class="progress-bar bg-info fs-6">Analysis</div>
+        </div>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Segment three"
+          aria-valuenow="20"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 30%; height: 32px"
+        >
+          <div class="progress-bar bg-danger fs-6">Networking</div>
+        </div>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Segment three"
+          aria-valuenow="20"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 5%; height: 32px"
+        >
+          <div class="progress-bar bg-secondary">Data</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SERVICES -->
+
+    <div id="services">
+      <div
+        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
+      >
+        <div class="col-md-6 p-lg-3 mx-auto my-5">
+          <h1 class="display-4 fw-bold">Transform Your Vision into Reality</h1>
+          <h3 class="fw-normal text-muted mb-3">
+            Counsulting | Analysis | Data | Artificial Inteligence | More
+          </h3>
+          <div class="d-flex gap-3 justify-content-center lead fw-normal">
+            <a class="icon-link" href="#testimonials">
+              Learn more
+              <img src="https://picsum.photos/id/56/100/40" alt="" />
+            </a>
+            <a class="icon-link" href="#services">
+              Services
+              <img src="https://picsum.photos/id/36/100/40" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div
+          class="product-device product-device-2 shadow-sm d-none d-md-block"
+        ></div>
+      </div>
+    </div>
+
+    <div class="services-main">
+      <div class="container py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Services & more</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col py-3 px-1">
+            <div
+              class="feature-icon d-inline-flex text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-card-checklist"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"
+                />
+                <path
+                  d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Counsulting</h3>
+            <p>
+              Our seasoned experts provide strategic insights and actionable solutions tailored to your unique challenges. Partner with us to elevate your business, streamline operations, and achieve extraordinary results. Together, we turn your vision into reality.
+            </p>
+            <a href="#" class="icon-link">
+              Know more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col py-3 px-1">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-cast"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0"
+                />
+                <path
+                  d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086z"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Digital Marketing</h3>
+            <p>
+              Our team of experts creates tailored marketing campaigns that drive engagement, increase conversions, and grow your business. From SEO and content marketing to social media and PPC, we provide comprehensive solutions to ensure your success in the digital landscape. Let's transform your online potential into tangible results.
+            </p>
+            <a href="#" class="icon-link">
+              Know more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col py-3 px-1">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-file-bar-graph-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-2 11.5v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5m-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Data Analysis</h3>
+            <p>
+              Our expert analysts leverage advanced techniques and cutting-edge tools to help you make informed decisions, optimize operations, and drive business growth. Unlock the full potential of your data and gain a competitive edge with our comprehensive data analysis services. Let's turn your data into your most valuable asset.
+            </p>
+            <a href="#" class="icon-link">
+              Know more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col py-3 px-1">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-123"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.873 11.297V4.142H1.699L0 5.379v1.137l1.64-1.18h.06v5.961zm3.213-5.09v-.063c0-.618.44-1.169 1.196-1.169.676 0 1.174.44 1.174 1.106 0 .624-.42 1.101-.807 1.526L4.99 10.553v.744h4.78v-.99H6.643v-.069L8.41 8.252c.65-.724 1.237-1.332 1.237-2.27C9.646 4.849 8.723 4 7.308 4c-1.573 0-2.36 1.064-2.36 2.15v.057zm6.559 1.883h.786c.823 0 1.374.481 1.379 1.179.01.707-.55 1.216-1.421 1.21-.77-.005-1.326-.419-1.379-.953h-1.095c.042 1.053.938 1.918 2.464 1.918 1.478 0 2.642-.839 2.62-2.144-.02-1.143-.922-1.651-1.551-1.714v-.063c.535-.09 1.347-.66 1.326-1.678-.026-1.053-.933-1.855-2.359-1.845-1.5.005-2.317.88-2.348 1.898h1.116c.032-.498.498-.944 1.206-.944.703 0 1.206.435 1.206 1.07.005.64-.504 1.106-1.2 1.106h-.75z"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Predictions</h3>
+            <p>
+              Our expert analysts leverage advanced techniques and cutting-edge tools to help you make informed decisions, optimize operations, and drive business growth. Unlock the full potential of your data and gain a competitive edge with our comprehensive data analysis services. Let's turn your data into your most valuable asset.
+            </p>
+            <a href="#" class="icon-link">
+              Know more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col py-3 px-1">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-robot"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"
+                />
+                <path
+                  d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Artificial Inteligence</h3>
+            <p>
+              We specialize in leveraging the transformative power of artificial intelligence to drive innovation and efficiency. Our cutting-edge AI solutions are designed to automate processes, enhance decision-making, and unlock new opportunities for your business. Partner with us to integrate intelligent systems that elevate your operations and deliver measurable results. Let's redefine what's possible with AI.
+            </p>
+            <a href="#" class="icon-link">
+              Know more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col py-3 px-1">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-people-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Networking</h3>
+            <p>
+              We provide robust and reliable networking solutions that keep your business connected and secure. Our expert team designs, implements, and manages advanced networks tailored to your specific needs, ensuring seamless communication and maximum uptime. Empower your organization with cutting-edge technology and expert support. Let's build the network that drives your success.
+            </p>
+            <a href="#" class="icon-link">
+              Know more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TESTIMONIALS -->
+
+    <div  id="testimonials">
+      <div class="container py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Testimonials / Previous Works</h2>
+      </div>
+    </div>
+    <div class="testimonials px-5 ms-5">
+      <div
+        class="row featurette p-lg-5 d-flex justify-content-center align-items-center"
+      >
+        <div class="col-md-4">
+          <h2 class="featurette-heading fw-normal lh-1 px-lg-5">
+            Consulting Services.
+          </h2>
+          <p class="lead">
+"Partnering with Roy & Sons was a game-changer for our business. Their strategic insights and tailored solutions helped us navigate complex challenges and achieve remarkable growth."
+— Jane Doe, CEO of XYZ Corp.
+<br>
+"The expertise and dedication of the team at Roy & Sons are unparalleled. Their guidance has been instrumental in our success."
+— John Smith, COO of ABC Ltd.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="featurette-heading fw-normal lh-1 px-lg-5">
+            Prediction Services
+          </h2>
+          <p class="lead">
+            "The predictive models developed by Roy & Sons have given us a clear competitive edge. We can now anticipate market trends and make proactive decisions with confidence."
+            — Rachel Green, Strategy Director at QRS Industries
+            <br>
+            "Their predictive analytics have revolutionized our business strategy. Roy & Sons has helped us stay ahead of the curve and optimize our resources."
+            — Chris Martin, CEO of Martin Tech
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            class="img-fluid"
+            src="https://picsum.photos/id/30/500/500"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="row featurette p-lg-5 d-flex justify-content-center align-items-center"
+      >
+        <div class="col-md-4">
+          <h2 class="featurette-heading fw-normal lh-1 px-lg-5">
+            Networking Services
+          </h2>
+          <p class="lead">
+            "The networking solutions from Roy & Sons are exceptional. We now have a secure, reliable network that supports our growing business needs."
+— Laura Thompson, IT Director at JKL Enterprises
+<br>
+"Their expertise in networking has been critical to our success. Roy & Sons provided a robust solution that has greatly improved our connectivity and performance."
+— Mark Davis, CIO of MNO Group
+          </p>
+        </div>
+        <div class="col-md-4 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-0">
+            Data Analysis Services
+          </h2>
+          <p class="lead">
+            "The insights provided by [Your Data Analysis Firm] have been invaluable. Their thorough analysis and actionable recommendations have driven our business decisions and led to substantial improvements."
+— Sarah Lee, Head of Analytics at LMN Inc.
+<br>
+"Working with [Your Data Analysis Firm] has transformed the way we understand our data. Their expertise has unlocked new opportunities and streamlined our operations."
+— David Kim, CFO of OPQ Solutions
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            class="img-fluid"
+            src="https://picsum.photos/id/145/500/500"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="row featurette p-lg-5 d-flex justify-content-center align-items-center"
+      >
+        <div class="col-md-4 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-0">
+            Digital Marketing Services
+          </h2>
+          <p class="lead">
+            "Thanks to Roy & Sons, our online presence has skyrocketed. Their innovative campaigns and data-driven strategies have significantly increased our engagement and conversions."
+— Emily Johnson, Marketing Director at 123 Enterprises
+<br>
+"The results speak for themselves. Roy & Sons took our digital marketing to the next level, and our business has never been better."
+— Michael Brown, Founder of Brown & Co.
+          </p>
+        </div>
+        <div class="col-md-4 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-0">
+            AI Services
+          </h2>
+          <p class="lead">
+            "Implementing AI solutions from Roy & Sons has been transformative. Automation and intelligent systems have increased our efficiency and reduced costs."
+— Anna Walker, Operations Manager at DEF Corp.
+<br>
+"The innovative AI technologies provided by Roy & Sons have empowered us to make smarter decisions and achieve greater success."
+— James Turner, CTO of GHI Technologies
+          </p>
+        </div>
+        <div class="col-md-4 order-md-1">
+          <img
+            class="img-fluid"
+            src="https://picsum.photos/id/96/500/500"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PRICING -->
+
+    <div id="pricing">
+      <div class="container py-3">
+        <header>
+          <div class="services-main">
+            <div class="container py-5" id="featured-3">
+              <h2 class="pb-2 border-bottom">Pricing</h2>
+              <p class="fs-5 text-body-secondary">
+                We understand that every business has unique requirements. That’s why we offer a range of pricing plans designed to provide maximum value and flexibility. Choose the plan that best suits your needs and let us help you achieve your goals.
+              </p>
+            </div>
+          </div>
+        </header>
+  
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Standard Plan</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    $XX<small class="text-body-secondary fw-light">/mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Comprehensive features for scaling</li>
+                    <li>Priority support</li>
+                    <li>Email support</li>
+                    <li>[Include 3-4 key features]</li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="w-100 btn btn-lg btn-outline-primary"
+                  >
+                    Sign up for free
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Premium Plan</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    $XX5<small class="text-body-secondary fw-light">/mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Full suite of advanced features</li>
+                    <li>Dedicated account manager</li>
+                    <li>Priority email support</li>
+                    <li>[Include 4-5 key features]</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">
+                    Get started
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Custom Plan</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    $XX9<small class="text-body-secondary fw-light">/mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>Personalized support</li>
+                    <li>Phone and email support</li>
+                    <li>[Include 1-2 key benefits]</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">
+                    Contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <h2 class="display-6 text-center mb-4">Compare plans</h2>
+  
+          <div class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th style="width: 34%"></th>
+                  <th style="width: 22%">Standard</th>
+                  <th style="width: 22%">Preminum</th>
+                  <th style="width: 22%">Custom</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Public</th>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Private</th>
+                  <td></td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                </tr>
+              </tbody>
+  
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Permissions</th>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Sharing</th>
+                  <td></td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited members</th>
+                  <td></td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Extra security</th>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48">
+                      <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                      </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+    <!-- CONTACT US -->
+
+    <div id="contact-us" >
+      <div class="services-main">
+        <div class="container py-5" id="featured-3">
+          <h2 class="pb-2 border-bottom">Contact Us</h2>
+        </div>
+        <div class="container mb-5">
+          <label for="exampleFormControlInput1" class="form-label fs-4"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="container mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label fs-4"
+            >Message or sugesstion</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="4"
+            placeholder="I sugest ..."
+          ></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer
+      class="row row-cols-3 row-cols-sm-4 row-cols-md-6 py-5 my-5 border-top px-5"
+    >
+      <div class="col mb-3"></div>
+      <div class="col mb-3">
+        <p class="text-body-secondary fw-bold ps-5">Roy & Sons © 2024</p>
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#hero-two" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#services" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#pricing" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#hero-two" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#services" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#pricing" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
